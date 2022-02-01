@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'lucida sans', 'trebuchet MS', 'Tahoma';
+
+    background-image: url("https://freefrontend.com/assets/img/css-background-patterns/simple-pattern-with-css3.png");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  h2{
+    font-family: 'Supermercado One', cursive;
+    font-size: 30px;
+    color:#fff;
+    text-align: center;
+  }
+  .cf:before, .cf:after{
+    content:"";
+    display:table;
+}
+ 
+.cf:after{
+    clear:both;
+}
+ 
+.cf{
+    zoom:1;
+}    
+
+ /* Form wrapper styling */
+#search {
+width: 220px;
+margin: 20px auto 20px auto;
+box-shadow: 0 1px 1px rgba(0, 0, 0, .4) inset, 0 1px 0 rgba(255, 255, 255, .2);
+}
+ 
+/* Form text input */
+ 
+#search input {
+width: 138px;
+height: 30px;
+padding: 10px 5px;
+float: left;
+font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+border: 0;
+background: transparent;
+border-radius: 3px 0 0 3px;
+color: #fff;
+}
+ 
+#search input:focus {
+    outline: 0;
+    background: transparent;
+    
+}
+ 
+#search input::-webkit-input-placeholder {
+   color: #FFF5E1;
+   font-weight: normal;
+   font-style: italic;
+}
+ 
+#search input:-moz-placeholder {
+    color: #FFF5E1;
+    font-weight: normal;
+    font-style: italic;
+}
+ 
+#search input:-ms-input-placeholder {
+    color: #FFF5E1;
+    font-weight: normal;
+    font-style: italic;
+}    
+ 
+/* Form submit button */
+#search button {
+overflow: visible;
+position: relative;
+float: right;
+border: 0;
+padding: 0;
+cursor: pointer;
+height: 40px;
+width: 72px;
+font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+color: white;
+text-transform: uppercase;
+background: #781C68;
+border-radius: 0 3px 3px 0;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+}
+   
+#search button:hover{     
+    background: #9A0680;
+}   
+   
+#search button:active,
+#search button:focus{   
+    background: #781C68;
+    outline: 0;   
+}
+ 
+#search button:before { /* left arrow */
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #781C68 transparent;
+    top: 12px;
+    left: -6px;
+}
+ 
+#search button:hover:before{
+    border-right-color: #9A0680;
+}
+ 
+#search button:focus:before,
+#search button:active:before{
+        border-right-color: #9A0680;
+}      
+ 
+#search button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+}    
+
+  .container {
+    position: relative;
+    display: grid;
+    margin:40px;
+    grid-template-columns: 300px 600px;
+    border-radius: 5px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.356);
+    background-color: #FFF5E1;
+  }
+  .container img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px 0 0 5px;
+  }
+  .container .btn {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    background-color: #781C68;
+    color: #FFF5E1;
+    padding: 22px 45px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.294);
+  }
+  .container .btn i {
+    margin-left: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .container__text {
+    padding: 40px 40px 0;
+  }
+  .container__text h1 {
+    color: #781C68;
+    font-weight: 400;
+  }
+  .container__text .container__text__star span {
+    font-size: 0.8rem;
+    color: #781C68;
+    margin: -5px 0 20px;
+  }
+  .container__text p {
+    font-size: 0.9rem;
+  }
+  .container__text .container__text__timing {
+    display: flex;
+    margin: 20px 0 10px;
+  }
+  .container__text .container__text__timing .container__text__timing_time {
+    margin-right: 40px;
+  }
+  .container__text .container__text__timing h2 { 
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #818189;
+  }
+  .container__text .container__text__timing p {
+    color: #781C68;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  a{
+    color: #FFF5E1;
+    text-decoration: none;
+    text-align: center;
+  }
+  h3{
+    font-size: 20px;
+    font-weight: 200;
+    padding:3px;
+    color: #818189;
+
+  }
